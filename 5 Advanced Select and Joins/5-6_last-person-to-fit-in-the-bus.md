@@ -75,7 +75,7 @@ Queue table:
 # Write your MySQL query statement below
 SELECT q1.person_name
 FROM Queue q1
-CROSS JOIN Queue q2
+INNER JOIN Queue q2
 ON q1.turn >= q2.turn
 GROUP BY q1.turn
 HAVING SUM(q2.weight) <= 1000

@@ -90,7 +90,6 @@ As we can see, users with IDs 30 and 96 visited the mall one time without making
 ### Solution
 
 ```
-# Write your MySQL query statement below
 SELECT customer_id, COUNT(v.visit_id) as count_no_trans
 FROM Visits v
 LEFT JOIN Transactions t

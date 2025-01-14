@@ -59,16 +59,9 @@ In 2015-01-04, the temperature was higher than the previous day (20 -&gt; 30).
 
 ```
 # Write your MySQL query statement below
--- SELECT id
--- FROM Weather w2
--- WHERE temperature > (
---     SELECT temperature
---     FROM Weather w1
---     WHERE w2.recordDate = w1.recordDate + INTERVAL 1 DAY
--- )
-
 SELECT w2.id
-FROM Weather w2
-CROSS JOIN Weather w1
-WHERE DATEDIFF(w2.recordDate, w1.recordDate) = 1 AND w2.temperature > w1.temperature;
+FROM Weather w1
+INNER JOIN Weather w2
+WHERE w2.recordDate = w1.recordDate + INTERVAL 1 DAY
+AND w2.temperature > w1.temperature
 ```

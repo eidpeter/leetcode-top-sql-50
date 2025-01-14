@@ -55,3 +55,19 @@ The person with id 3 is a friend of people 1, 2, and 4, so he has three friends 
 
 ---
 
+### Solution
+
+```
+SELECT id, COUNT(DISTINCT p2) AS num
+FROM (
+    SELECT requester_id AS id, accepter_id AS p2
+    FROM RequestAccepted
+    UNION ALL
+    SELECT accepter_id AS id, requester_id AS p2
+    FROM RequestAccepted
+) AS connections
+GROUP BY id
+ORDER BY num DESC
+LIMIT 1
+
+```

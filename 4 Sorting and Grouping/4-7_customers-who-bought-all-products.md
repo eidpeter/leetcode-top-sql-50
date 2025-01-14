@@ -81,5 +81,5 @@ The customers who bought all the products (5 and 6) are customers with IDs 1 and
 SELECT customer_id
 FROM Customer
 GROUP BY customer_id
-HAVING COUNT(DISTINCT product_key)=(SELECT COUNT(*) FROM Product)
+HAVING COUNT(DISTINCT product_key)=(SELECT COUNT(*) FROM Product) 
 ```

@@ -81,9 +81,8 @@ Cat queries poor_ query_percentage is (1 / 3) * 100 = 33.33
 ```
 # Write your MySQL query statement below
 SELECT query_name,
-ROUND(SUM(rating/position)/COUNT(query_name), 2) AS quality,
-ROUND(100*COUNT(CASE WHEN rating<3 THEN 1 END)/COUNT(query_name), 2) AS poor_query_percentage
+ ROUND(AVG(rating/position), 2) AS quality,
+ ROUND(100*(SUM(CASE WHEN rating <3 THEN 1 ELSE 0 END))/(COUNT(*)), 2) AS poor_query_percentage
 FROM Queries
-WHERE query_name IS NOT NULL
 GROUP BY query_name
 ```

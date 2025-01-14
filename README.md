@@ -97,17 +97,17 @@ Best for 1 month of prep time
 
 - [x] [Employees Whose Manager Left the Company](<6 Subqueries/6-1_employees-whose-manager-left-the-company.md>) (Easy)
 
-- [ ] [Exchange Seats](<6 Subqueries/6-2_exchange-seats.md>) (Medium)
+- [x] [Exchange Seats](<6 Subqueries/6-2_exchange-seats.md>) (Medium)
 
-- [ ] [Movie Rating](<6 Subqueries/6-3_movie-rating.md>) (Medium)
+- [x] [Movie Rating](<6 Subqueries/6-3_movie-rating.md>) (Medium)
 
-- [ ] [Restaurant Growth](<6 Subqueries/6-4_restaurant-growth.md>) (Medium)
+- [x] [Restaurant Growth](<6 Subqueries/6-4_restaurant-growth.md>) (Medium)
 
-- [ ] [Friend Requests II: Who Has the Most Friends](<6 Subqueries/6-5_friend-requests-ii-who-has-the-most-friends.md>) (Medium)
+- [x] [Friend Requests II: Who Has the Most Friends](<6 Subqueries/6-5_friend-requests-ii-who-has-the-most-friends.md>) (Medium)
 
-- [ ] [Investments in 2016](<6 Subqueries/6-6_investments-in-2016.md>) (Medium)
+- [x] [Investments in 2016](<6 Subqueries/6-6_investments-in-2016.md>) (Medium)
 
-- [ ] [Department Top Three Salaries](<6 Subqueries/6-7_department-top-three-salaries.md>) (Hard)
+- [x] [Department Top Three Salaries](<6 Subqueries/6-7_department-top-three-salaries.md>) (Hard)
 
 **Advanced String Functions / Regex / Clause:**
 

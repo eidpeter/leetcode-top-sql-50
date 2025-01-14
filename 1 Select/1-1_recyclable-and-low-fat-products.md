@@ -59,6 +59,7 @@ Products table:
 # Write your MySQL query statement below
 SELECT product_id
 FROM Products
-WHERE low_fats='Y'
-AND recyclable='Y';
+WHERE 0=0
+AND low_fats = 'Y'
+AND recyclable = 'Y'
 ```

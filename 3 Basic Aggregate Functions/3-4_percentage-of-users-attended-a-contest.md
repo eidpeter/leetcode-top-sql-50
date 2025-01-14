@@ -92,7 +92,8 @@ Bob registered in contest 207 and the percentage is ((1/3) * 100) = 33.33%
 
 ```
 # Write your MySQL query statement below
-SELECT r.contest_id, ROUND(100*COUNT(u.user_id)/(SELECT COUNT(*) FROM Users), 2) AS percentage
+
+SELECT r.contest_id,  ROUND(100*COUNT(r.user_id)/(SELECT COUNT(*) FROM Users), 2) AS percentage
 FROM Users u
 INNER JOIN Register r
 ON u.user_id=r.user_id

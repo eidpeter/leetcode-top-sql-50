@@ -86,7 +86,6 @@ Average selling price for product 2 = ((200 * 15) + (30 * 30)) / 230 = 16.96
 
 ```
 # Write your MySQL query statement below
--- SELECT *
 SELECT p.product_id,
 COALESCE(ROUND(SUM(u.units * p.price) / SUM(u.units), 2), 0) AS average_price
 FROM Prices p

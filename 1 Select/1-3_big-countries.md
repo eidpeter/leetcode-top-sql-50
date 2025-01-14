@@ -65,6 +65,7 @@ World table:
 
 ```
 # Write your MySQL query statement below
+
 SELECT name, population, area
 FROM World
 WHERE area >= 3000000

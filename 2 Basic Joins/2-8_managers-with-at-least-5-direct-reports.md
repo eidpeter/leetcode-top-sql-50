@@ -59,19 +59,10 @@ Employee table:
 
 ```
 # Write your MySQL query statement below
-SELECT m.name
-FROM Employee m 
-INNER JOIN Employee e
-ON m.id = e.managerId 
-GROUP BY e.managerId 
-HAVING COUNT(e.managerId) >= 5
-
--- SELECT name
--- FROM Employee
--- WHERE id IN (
---     SELECT managerId
---     FROM Employee
---     GROUP BY managerId
---     HAVING COUNT(*)>=5
--- )
+SELECT e1.name
+FROM Employee e1
+INNER JOIN Employee e2
+ON e2.managerId = e1.id
+GROUP BY e1.id
+HAVING COUNT(*)>=5
 ```

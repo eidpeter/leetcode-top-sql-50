@@ -62,7 +62,7 @@ We have three movies with odd-numbered IDs: 1, 3, and 5. The movie with ID = 3 i
 # Write your MySQL query statement below
 SELECT id, movie, description, rating
 FROM Cinema
-WHERE id % 2 <> 0
+WHERE id%2<>0
 AND description <> 'boring'
 ORDER BY rating DESC
 ```

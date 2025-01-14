@@ -124,6 +124,7 @@ John attended the Math exam 1 time, the Physics exam 1 time, and the Programming
 
 ```
 # Write your MySQL query statement below
+
 SELECT st.student_id, st.student_name, su.subject_name, COUNT(e.student_id) AS attended_exams
 FROM Students st
 CROSS JOIN Subjects su
